@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ARIA States and Properties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container-wide">
+    <h1>ARIA States and Properties</h1>
+    <p><a href="https://github.com/russmaxdesign/aria-states-properties">Github Page</a></p>
+    <p>WAI ARIA states and properties are categorized as follows:</p>
+    <ul>
+      <li><a href="#widget">Widget Attributes</a></li>
+      <li><a href="#live">Live Region Attributes</a></li>
+      <li><a href="#drag">Drag-and-Drop Attributes</a></li>
+      <li><a href="#relationship">Relationship Attributes</a></li>
+      <li><a href="#global">Global Attributes</a></li>
+    </ul>
+
+    <p>The original WAI Specification was <a href="https://www.w3.org/TR/wai-aria-1.0/">1.0</a>. New ARIA states and properties were added in <a href="https://www.w3.org/TR/wai-aria-1.1/">ARIA 1.1</a>. No new states have been added into <a href="https://www.w3.org/TR/wai-aria-1.2/">ARIA 1.2</a> at this stage. New states and properties have been flagged in each category.</p>
+
+    <h2 id="widget">Widget Attributes</h2>
+    <p>These attributes are specific to common user interface elements found on GUI systems or in rich internet applications which receive user input and process user actions. These attributes are used to support the widget roles.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Widget Attributes</th>
+          <th>ARIA 1.0</th>
+          <th>ARIA 1.1</th>
+          <th>ARIA 1.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-autocomplete"><code>aria-autocomplete</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-checked"><code>aria-checked</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-disabled"><code>aria-disabled</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-errormessage"><code>aria-errormessage</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-expanded"><code>aria-expanded</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-haspopup"><code>aria-haspopup</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-hidden"><code>aria-hidden</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-invalid"><code>aria-invalid</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-label"><code>aria-label</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-level"><code>aria-level</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-modal"><code>aria-modal</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-multiline"><code>aria-multiline</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-multiselectable"><code>aria-multiselectable</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-orientation"><code>aria-orientation</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-placeholder"><code>aria-placeholder</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-pressed"><code>aria-pressed</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-readonly"><code>aria-readonly</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-required"><code>aria-required</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-selected"><code>aria-selected</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-sort"><code>aria-sort</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-valuemax"><code>aria-valuemax</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-valuemin"><code>aria-valuemin</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-valuenow"><code>aria-valuenow</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-valuetext"><code>aria-valuetext</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="live">Live Region Attributes</h2>
+    <p>These attributes indicate that content changes may occur without the element having focus, and to provide assistive technologies with information on how to process those content updates. </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Live Region Attributes</th>
+          <th>ARIA 1.0</th>
+          <th>ARIA 1.1</th>
+          <th>ARIA 1.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-atomic" class="property-reference"><code>aria-atomic</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-busy" class="state-reference"><code>aria-busy</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-live"><code>aria-live</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-relevant" class="property-reference"><code>aria-relevant</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h2 id="drag">Drag-and-Drop Attributes</h2>
+    <p>These attributes indicate information about drag-and-drop interface elements, such as draggable elements and their drop targets.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Drag-and-Drop Attributes</th>
+          <th>ARIA 1.0</th>
+          <th>ARIA 1.1</th>
+          <th>ARIA 1.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-dropeffect" class="property-reference"><code>aria-dropeffect</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-grabbed" class="state-reference"><code>aria-grabbed</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="relationship">Relationship Attributes</h2>
+    <p>These attributes indicate relationships or associations between elements which cannot be readily determined from the document structure.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Relationship Attributes</th>
+          <th>ARIA 1.0</th>
+          <th>ARIA 1.1</th>
+          <th>ARIA 1.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-activedescendant" class="property-reference"><code>aria-activedescendant</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-colcount" class="property-reference"><code>aria-colcount</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-colindex" class="property-reference"><code>aria-colindex</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-colspan" class="property-reference"><code>aria-colspan</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-controls" class="property-reference"><code>aria-controls</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-describedby" class="property-reference"><code>aria-describedby</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-details" class="property-reference"><code>aria-details</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-errormessage" class="property-reference"><code>aria-errormessage</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-flowto" class="property-reference"><code>aria-flowto</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby" class="property-reference"><code>aria-labelledby</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-owns" class="property-reference"><code>aria-owns</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-posinset" class="property-reference"><code>aria-posinset</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-rowcount" class="property-reference"><code>aria-rowcount</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-rowindex" class="property-reference"><code>aria-rowindex</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-rowspan" class="property-reference"><code>aria-rowspan</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-setsize" class="property-reference"><code>aria-setsize</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="global">Global Attributes</h2>
+    <p>Some states and properties are applicable to all host language elements regardless of whether a role is applied. Global states and properties are supported by all roles and by all base markup elements.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Global Attributes</th>
+          <th>ARIA 1.0</th>
+          <th>ARIA 1.1</th>
+          <th>ARIA 1.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-atomic"><code>aria-atomic</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-busy" class="state-reference"><code>aria-busy</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-controls"><code>aria-controls</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-current" class="state-reference"><code>aria-current</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-describedby"><code>aria-describedby</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-details"><code>aria-details</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-disabled" class="state-reference"><code>aria-disabled</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-dropeffect"><code>aria-dropeffect</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-errormessage"><code>aria-errormessage</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-flowto"><code>aria-flowto</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-grabbed" class="state-reference"><code>aria-grabbed</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-haspopup"><code>aria-haspopup</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-hidden" class="state-reference"><code>aria-hidden</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-invalid" class="state-reference"><code>aria-invalid</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-keyshortcuts"><code>aria-keyshortcuts</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-label"><code>aria-label</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby"><code>aria-labelledby</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-live"><code>aria-live</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-owns"><code>aria-owns</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-relevant"><code>aria-relevant</code></a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.w3.org/TR/wai-aria-1.2/#aria-roledescription"><code>aria-roledescription</code></a></td>
+          <td class="na">NA</td>
+          <td class="new">New<span class="hidden"> - Added in ARIA 1.1</span></td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><a href="https://github.com/russmaxdesign/aria-states-properties">Github Page</a></p>
+  </div>
+</body>
+</html>
+
